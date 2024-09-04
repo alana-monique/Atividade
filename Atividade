@@ -1,0 +1,84 @@
+[4/9 07:37] Alana Monique: print("Hello World")
+[4/9 07:37] Alana Monique: print("Seu nome")
+[4/9 07:38] Alana Monique: a = 10
+b = 5
+
+soma = a + b
+subtracao = a - b
+multiplicacao = a * b
+divisao = a / b
+
+print("Soma:", soma)
+print("Subtração:", subtracao)
+print("Multiplicação:", multiplicacao)
+print("Divisão:", divisao)
+[4/9 07:38] Alana Monique: def verificar_paridade(numero):
+    if numero % 2 == 0:
+        print("Par")
+    else:
+        print("Ímpar")
+
+# Exemplo de uso
+verificar_paridade(7)  # Ímpar
+[4/9 07:38] Alana Monique: string1 = "Hello"
+string2 = "World"
+
+concatenada = string1 + " " + string2
+print(concatenada)
+[4/9 07:39] Alana Monique: def calculadora(num1, num2, operacao):
+    if operacao == "+":
+        return num1 + num2
+    elif operacao == "-":
+        return num1 - num2
+    elif operacao == "*":
+        return num1 * num2
+    elif operacao == "/":
+        return num1 / num2
+    else:
+        return "Operação inválida"
+
+# Exemplo de uso
+resultado = calculadora(10, 5, "+")
+print("Resultado:", resultado)
+[4/9 07:39] Alana Monique: def verificar_palindromo(palavra):
+    palavra = palavra.lower()
+    return palavra == palavra[::-1]
+
+# Exemplo de uso
+resultado = verificar_palindromo("radar")
+print("É palíndromo?", resultado)
+[4/9 07:39] Alana Monique: def fatorial(n):
+    if n == 0 or n == 1:
+        return 1
+    else:
+        return n * fatorial(n - 1)
+
+# Exemplo de uso
+resultado = fatorial(5)
+print("Fatorial:", resultado)
+[4/9 07:39] Alana Monique: numeros = [10, 3, 45, 7, 2, 99]
+
+maior = max(numeros)
+menor = min(numeros)
+
+print("Maior número:", maior)
+print("Menor número:", menor)
+[4/9 07:39] Alana Monique: def filtrar_pares(numeros):
+    return [num for num in numeros if num % 2 == 0]
+
+# Exemplo de uso
+numeros = [10, 3, 45, 7, 2, 99]
+pares = filtrar_pares(numeros)
+print("Números pares:", pares)
+[4/9 07:40] Alana Monique: def contar_vogais(texto):
+    vogais = "aeiou"
+    contador = 0
+    for letra in texto.lower():
+        if letra in vogais:
+            contador += 1
+    return contador
+
+# Exemplo de uso
+texto = "Exemplo de string"
+total_vogais = contar_vogais(texto)
+print("Total de vogais:", total_vogais)
